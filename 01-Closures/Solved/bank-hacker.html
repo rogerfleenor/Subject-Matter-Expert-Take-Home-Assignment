@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro to Closures</title>
+    </head>
+    <body>
+        <h1>Pop open the console for this activity!</h1>
+        <h2>Right click and select "inspect".</h2>
+        <script>
+            function mySavingsAccount() {
+                
+                var allTheMoneys = '$1,222,345';
+
+                function validAccountNumber (accountNumber) {      //validAccountNumber is a nested function or a 'closure' that has access to and uses a variable that belongs to its parent
+                    if (accountNumber === 482938473298472) {
+                        return allTheMoneys;
+                    } else {
+                        return false;
+                    }
+                }
+                return validAccountNumber;
+            }
+
+            var bankHacker = mySavingsAccount();
+            console.log(bankHacker(123456789));  // returns false
+
+        </script>
+    </body>
+
+</html>

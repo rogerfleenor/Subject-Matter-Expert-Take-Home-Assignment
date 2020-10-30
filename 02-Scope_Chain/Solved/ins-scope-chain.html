@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scope Chain</title>
+    </head>
+    <body>
+        <h1>Pop open the console for this activity!</h1>
+        <h2>Right click and select "inspect".</h2>
+        <script>
+            function howManyCoconutLayers(){
+                let shell = 1
+                function addLayer(){
+                    let meat = 1
+                    function addLayers(){
+                        let juice = 1
+                        return (shell + meat + juice)
+                    }
+                    return addLayers
+                }
+                return addLayer
+            }
+            //Invoke the following functions
+            //howManyCoconutLayers()
+            //howManyCoconutLayers()()
+            //howManyCoconutLayers()()()
+
+            let space = 0
+            function earthLayerDistance(crust){
+            let b = 1
+            var layer1 = function (mantle){
+                let c = 2
+                function layer2(outerCore){
+                let d = 3
+                console.log(a, b, c, d, crust, mantle, outerCore, innerCore)
+                }
+                let innerCore = 3000
+                return layer2
+            }
+            return layer1
+            }
+
+            //Invoke the following functions
+            //earthLayerDistance(10)
+            //earthLayerDistance(10)(20)
+            //earthLayerDistance(10)(20)(30)
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro to Closures</title>
+    </head>
+    <body>
+        <h1>Pop open the console for this activity!</h1>
+        <h2>Right click and select "inspect".</h2>
+        <script>
+
+            let coconutShell = 'coco shell' 
+
+            function coconut(){
+                let cocoMeat = 'coco meat'
+                function insideCoconut(){
+                    let layer2 = 'fresh coco water!'
+                    console.log(`Crack the ${coconutShell}, then scoop through the ${cocoMeat}, until we finally have ${layer2}`)
+                }
+                return insideCoconut
+            }
+
+            console.log(coconut()) ///[Function: insideCoconut]
+            console.log(coconut()()) ///Crack the coco meat, then scoop through the coco meat, until we finally have fresh coco water!
+            
+            
+            let myCoco = coconut()
+            console.log(myCoco())
+
+            ///////Extension
+            //Is the function below a closure? Discuss.
+
+            function amIClosure () {
+                let x = 'I am not used by the inner function'
+                return function amIClosure(){
+                    console.log('Am I a closure if I do not reference my surrounding state?')
+                }
+            }
+        </script>
+    </body>
+
+</html>

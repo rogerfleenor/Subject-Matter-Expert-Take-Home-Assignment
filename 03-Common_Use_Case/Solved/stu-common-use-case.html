@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Common Use Case</title>
+    </head>
+    <body>
+        <h1>Pop open the console for this activity!</h1>
+        <h2>Right click and select "inspect".</h2>
+        <script>
+
+            // Create Lexical Environments
+            // Modify bankAccount() to support making deposits, withdrawls and balance inquiry 
+            // using what you have learned about lexical environments
+
+            function bankAccount(){
+                var savings = 0
+                return function(deposit){
+                    savings += deposit
+                    return '$'+savings.toString();
+                }
+                
+            }
+
+            function bankAccount(){
+                let savings = 1000000;
+                function withdrawl(w){
+                    savings -= w;
+                    function deposit(d){
+                        savings += d;
+                        function balanceInquiry(){
+                            return '$'+savings.toString();
+                        }
+                        return balanceInquiry;
+                    }
+                    return deposit;
+                }
+                return withdrawl;
+            }
+            //Invoke the following functions 
+            
+            var doWithdrawl = bankAccount()(100);
+            var doDeposit = bankAccount()()(50);
+            var doBalanceInquiry = bankAccount()()()();
+
+            console.log('withdrawl: ', doWithdrawl);
+            console.log('deposit: ', doDeposit);
+            console.log('balance: ', doBalanceInquiry);
+
+        </script>
+    </body>
+
+</html>

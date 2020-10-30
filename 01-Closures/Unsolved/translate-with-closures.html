@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Translate with Closures</title>
+    </head>
+    <body>
+        <h1>Pop open the console for this activity!</h1>
+        <h2>Right click and select "inspect".</h2>
+        <script>
+            //The following translators are broken and need fixing!
+            //Use what your understanding of closures to debug each function until the correct translation is returned.
+            //Discuss your predictions, reasoning and results for each below with your peers.
+
+            function spanishTranslator() {
+                var translate = function() { //what type of function is this?
+                    console.log(hola); 
+                }
+                return translate;
+                var hola = 'hola';
+            }
+            var sayHiInSpanish = spanishTranslator(); 
+            sayHiInSpanish();
+
+            //what is the output?
+
+            function frenchTranslator() {
+                function translate() {  
+                    console.log(salut); 
+                }
+                var salut = 'salut';
+                return translate;
+            }
+            var translateHiInFrench = frenchTranslator(); 
+            translateHiInFrench();
+
+            //what is the output?
+
+            function germanTranslator() {
+                return function translate() { 
+                    console.log(hallo); 
+                }
+                var hallo = 'hallo';
+            }
+            var sayHiInGerman = germanTranslator(); 
+            sayHiInGerman(); 
+
+            //what is the output?
+
+            //finished early? Now try creating your own closure translator!
+
+        </script>
+    </body>
+</html>
