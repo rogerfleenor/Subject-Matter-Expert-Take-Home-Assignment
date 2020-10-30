@@ -1,17 +1,21 @@
 # Subject-Matter-Expert-Take-Home-Assignment
 
-# 
+
 **Closures in JavaScript**
 
 In this repo you will find Roger Fleenor’s Subject Matter Expert Take Home Assignment for 2U. Included is a lesson plan on Closures in JavaScript.
 
+Visit Roger's LinkedIn: https://www.linkedin.com/in/rogerfleenor/
 
-### 
+##  
+**Definitions**
+
+My interpretation of ‘stoking curiosity’ is grabbing the students' interest and keeping them engaged with a hunger to find out more such as starting with an exciting opening line and jumping right into a low-intensity activity to set the high energy and engaging flow of the lesson. And ‘real-world problem’ is the connection of technical concept or theory to practical use in industry such as performing secure widthdrawl/deposit operations in the bank account activity.
+
+## 
 **Assumptions**
 
 Students:
-
-
 
 *   Have exposure to basics of 
     *   Data types: numbers, strings, objects.
@@ -39,14 +43,10 @@ By end of lesson, students should be able to explain the following with an examp
 *   Common Use Cases
 
 ## 
-
-
-
-## 
 **Class Activities**
 
 
-## 
+# 
 **1.1 Everyone Activity: Intro to Closures (10min)**
 
 *   Tell students to follow along by powering up our JavaScript V8’s engines! Aka Chrome browser’s console by  opening the unsolved <span style="text-decoration:underline;">evr-bank-hacker.html</span>
@@ -56,7 +56,7 @@ By end of lesson, students should be able to explain the following with an examp
 *   Instruct students to copy the functions above to their console and take a few minutes to find a way to check if an `accountNumber` is valid to keep the bankHacker from getting `allTheMoneys` without revealing the `accountNumber`
 *   Notice that `validAccountNumber` is declared inside of  `mySavingsAccount`, that makes this a closure. `mySavingsAccount` is the 'parent' of `validAccountNumber` meaning `mySavingsAccount` has access to `accountNumber.` Children inherit all methods and variables from their parents!
 
-## 
+#
 **1.2 Instructor Demo: Intro to Closures (5min)**
 
 *   Explain that the big idea behind a closure is a function inside of a function! These bundled functions have references to its surrounding state (the lexical environment). 
@@ -71,18 +71,15 @@ By end of lesson, students should be able to explain the following with an examp
 *   Closures have access to variables and parameters that belong to all parent functions.
 *   Ask a few students to explain in their own words: A closure is a function inside of a parent function, many ways to invoke a closure, and that closures have access to the parent function’s variables and parameters.
 
-## 
+#
 **1.3 Student Activity: Intro to Closures (15min)**
 
-
 Students will:
-
-
 
 *   Debug & invoke the correct translation functions.
 *   Have students attempt to create their own closure translating another language of their choice.
 
-## 
+# 
 **1.4 Instructor Review: Intro to Closures (10min)**
 
 *   Ask a student to volunteer walking through their closure using the custom translator solution and share their findings.
@@ -91,7 +88,7 @@ Students will:
 *   Discuss whether or not the `germanTranslator` inner function is a closure, since it doesn't reference any variables in its lexical environment.
 *   Encourage students to explain the takeaways on closures.
 
-## 
+# 
 **2.1 Instructor Demo: Scope Chain (5min)**
 
 *   Students learn about scope and inheritance in this section, start by opening the solved <span style="text-decoration:underline;">ins-scope-chain.html</span>
@@ -105,19 +102,19 @@ Students will:
     *   Does the closure in `layer1` have access to the variable `innerCore` despite being initialized later?
 *   Have a different student explain scope chain in their own words.
 
-## 
+# 
 **2.2 Student Activity: Scope Chain (15min)**
 
 *   Students will create custom closures and variables in unsolved <span style="text-decoration:underline;">stu-custom-scope-chain.html</span> to exercise the concept of Scope Chain.
 
-## 
+#
 **2.3 Instructor Review: Scope Chain (10min)**
 
 *   Note to Instructor: prepare to live code a closure demonstrating scope chain with context coming from experience in your career.
 *   Have two students demo (screen share) the closures they have created and explain how scope chain and closures are related.
 *   Open the <span style="text-decoration:underline;">ins-custom-scope-chain.html</span> and live code and walkthrough creating a closure.
 
-## 
+#
 **3.1 Instructor Demo: Common Use Cases for Closures (5min)**
 
 *   Explain Lexical Environment to students as follows: very simply, a lexical environment is a place where variables and references to the objects are stored.
@@ -127,19 +124,19 @@ Students will:
 *   Ask the class to imagine how this lexical environment can be beneficial in a real world use case.
 *   Give students another example with perspective from experience in your career, reinforce this with the idea that data is stored in a lexical environment so that it can only be modified with certain methods.
 
-## 
+# 
 **3.2 Student Activity: Common Use Cases for Closures (15min)**
 
 *   Students will open the unsolved <span style="text-decoration:underline;">stu-common-use-case.html</span> and recreate the `bankAccount` function with closures to emulate a real world scenario of making deposits and withdrawals using closures.
 
-## 
+# 
 **3.3 Instructor Review: Common Use Cases for Closures (10min)**
 
 *   Volunteer a student to share their screen and demo the deposit and withdrawal functionality in their `bankAccount`. Guide the student to the solution if there is a small error.
 *   Open solved <span style="text-decoration:underline;">ins-common-use-case.html</span> and walkthrough the solution demoing the variety of use case invocations.
 *   Elaborate on other practical implications for using closures including any examples you have experienced throughout your career.
 *   Share with students that the concepts reviewed today are foundational to their future as a developer working with object-oriented programming.
-*   Wrap up today’s lesson with a final definition of the following: 
+*   Wrap up today’s lesson with a final definition of the following class objectives: 
     *   Closure
     *   Scope Chain
     *   Lexical Environment
