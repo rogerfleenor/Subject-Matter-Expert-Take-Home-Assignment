@@ -1,7 +1,7 @@
 # Subject-Matter-Expert-Take-Home-Assignment
 
 
-**Closures in JavaScript**
+**Closures in JavaScript Lesson Plan**
 
 In this repo you will find Roger Fleenor’s Subject Matter Expert Take Home Assignment for 2U. Included is a lesson plan on Closures in JavaScript.
 
