@@ -141,3 +141,9 @@ Students will:
     *   Scope Chain
     *   Lexical Environment
     *   Common Use Case
+
+#
+**References**
+
+* Free Code Camp: https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44/
+* Various Spontaneous Googling
